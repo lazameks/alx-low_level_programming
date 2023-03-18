@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 
 /**
  * main - Entry point
@@ -8,10 +7,10 @@
  */
 int main(void)
 {
-	printf("size of a char: %2d byte(s)", sizeof(char));
-	printf("size of a int: %2d byte(s)", sizeof(int));
-	printf("size of a long int: %2d byte(s)", sizeof(long int));
-	printf("size of a long long int: %2d byte(s)", sizeof(long long int));
-	printf("size of a float: %2d byte(s)", sizeof(float));
+	printf("size of a char: %d byte(s)", sizeof(char));
+	printf("size of a int: %d byte(s)", sizeof(int));
+	printf("size of a long int: %d byte(s)", sizeof(long int));
+	printf("size of a long long int: %d byte(s)", sizeof(long long int));
+	printf("size of a float: %d byte(s)", sizeof(float));
 	return (0);
 }
