@@ -17,7 +17,7 @@ int main(void)
 		putchar(n);
 		if (n == '9')
 		{
-			putchar(' ');
+			putchar('\n');
 			continue;
 		}
 		else
@@ -26,3 +26,4 @@ int main(void)
 	}
 	return (0);
 }
+
