@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ * will print the last digit of the a rand num 
+ * greater than 5 
+ * less than 6 
+ * equall to 0
+ */
 int main(void)
 {
 	int n;
