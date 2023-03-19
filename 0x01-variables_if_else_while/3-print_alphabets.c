@@ -9,7 +9,9 @@
  */
 int main(void)
 {
-	int ch_1, ch_2;	
+	int ch_1;
+	int ch_2:
+
 	for (ch_1 = 'a'; ch_1 <= 'z'; ch_1++)
 		putchar(ch_1);
 	for (ch_2 = 'A'; ch_2 <= 'Z'; ch_2++)
