@@ -12,14 +12,15 @@ int main(void)
 {
 	int n;
 
-	n = 0;
-	while (n < 10)
+	for(n = '0'; n <= '9'; n++)
 	{
-		putchar(n);
-		putchar(',');
-		putchar(' ');
-		n++;
+		if (n == '9')
+			putchar(n);
+		else {
+			putchar(n);
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	putchar('\n');
-	return (0);
+	return 0;
 }
