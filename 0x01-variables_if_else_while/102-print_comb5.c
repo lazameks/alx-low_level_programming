@@ -10,12 +10,7 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
-	int i;
-	int j;
+	int a,b,c,d,i,j;
 
 	a = '0';
 	for (a = '0'; a <= '9'; a++)
@@ -33,7 +28,6 @@ int main(void)
 				j = (b + 1);
 			else
 				continue;
-
 			for (c = i; c <= '9'; c++)
 			{
 				for (d = j; d <= '9'; d++)
