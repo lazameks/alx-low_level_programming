@@ -2,6 +2,11 @@
 #include <stdbool.h>
 
 /**
+ * _strspn - compares strings to find match
+ * @s: main string
+ * @accept: string to find match
+ *
+ * Return: initial_lenght
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -22,10 +27,10 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		if (!found_match)
-			break;
-		else
+		if (found_match)
 			initial_lenght++;
+		else
+			break;
 	}
 	return (initial_lenght);
 }
