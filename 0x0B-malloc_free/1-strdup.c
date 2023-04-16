@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strdup - makes a duplicate of a str
+ * _strdup - makes a duplicate of a str
  * @str: str to be duplicated
  *
  * Return: NULL or copied str
