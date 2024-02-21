@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	long int previous, current, next;
+	unsigned long int previous, current, next;
 	int i, counter = 0;
 
 	previous = 1;
 	current = 2;
-	printf("%ld, ", previous);
-	printf("%ld, ", current);
+	printf("%lu, ", previous);
+	printf("%lu, ", current);
 	for (i = 0; i < (98 - 2); i++)
 	{
 		next = previous + current;
@@ -24,10 +24,10 @@ int main(void)
 		counter++;
 		if (counter == 96)
 		{
-			printf("%ld\n", next);
+			printf("%lu\n", next);
 		}
 		else
-			printf("%ld, ", next);
+			printf("%lu, ", next);
 	}
 	return (0);
 }
