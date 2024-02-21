@@ -16,7 +16,7 @@ int main(void)
 	current = 2;
 	printf("%lu, ", previous);
 	printf("%lu, ", current);
-	for (i = 0; i < 96; i++)
+	for (i = 0; i < 97; i++)
 	{
 		next = previous + current;
 		previous = current;
