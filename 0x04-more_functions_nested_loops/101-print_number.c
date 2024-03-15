@@ -9,6 +9,7 @@
 void print_number(int n)
 {
 	int i, divisor = 10;
+	unsigned int store_n;
 
 	if (n != 0)
 	{
@@ -18,26 +19,28 @@ void print_number(int n)
 			_putchar('-');
 		}
 
-		while ((n / divisor) > 9)
+		store_n = n;
+
+		while ((store_n / divisor) > 9)
 		{
 			divisor *= 10;
 		}
 
-		if (n < 10)
-			_putchar(n + '0');
+		if (store_n < 10)
+			_putchar(store_n + '0');
 		else
 		{
 			for (i = divisor; i >= 10 ; i /= 10)
 			{
 				if (i > 10)
 				{
-					_putchar(n / i + '0');
-					n %= i;
+					_putchar(store_n / i + '0');
+					store_n %= i;
 				}
 				else
 				{
-					_putchar(n / i + '0');
-					_putchar(n % i + '0');
+					_putchar(store_n / i + '0');
+					_putchar(store_n % i + '0');
 				}
 			}
 		}
