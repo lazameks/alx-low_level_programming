@@ -23,17 +23,22 @@ void print_number(int n)
 			divisor *= 10;
 		}
 
-		for (i = divisor; i > 1; i /= 10)
+		if (n < 10)
+			_putchar(n + '0');
+		else
 		{
-			if (i > 10)
+			for (i = divisor; i >= 10 ; i /= 10)
 			{
-				_putchar(n / i + '0');
-				n %= i;
-			}
-			else
-			{
-				_putchar(n / i + '0');
-				_putchar(n % i + '0');
+				if (i > 10)
+				{
+					_putchar(n / i + '0');
+					n %= i;
+				}
+				else
+				{
+					_putchar(n / i + '0');
+					_putchar(n % i + '0');
+				}
 			}
 		}
 	}
