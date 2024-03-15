@@ -8,6 +8,8 @@
 
 void print_number(int n)
 {
+	int i, divisor = 10;
+
 	if (n != 0)
 	{
 		if (n < 0)
@@ -16,26 +18,23 @@ void print_number(int n)
 			_putchar('-');
 		}
 
-		if (n < 100)
+		while ((n / divisor) > 9)
 		{
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
+			divisor *= 10;
 		}
-		else if (n < 1000 && n > 99)
+
+		for (i = divisor; i > 1; i /= 10)
 		{
-			_putchar(n / 100 + '0');
-			n %= 100;
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
-		}
-		else if (n < 10000 && n > 999)
-		{
-			_putchar(n / 1000 + '0');
-			n %= 1000;
-			_putchar(n / 100 + '0');
-			n %= 100;
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
+			if (i > 10)
+			{
+				_putchar(n / i + '0');
+				n %= i;
+			}
+			else
+			{
+				_putchar(n / i + '0');
+				_putchar(n % i + '0');
+			}
 		}
 	}
 	else
