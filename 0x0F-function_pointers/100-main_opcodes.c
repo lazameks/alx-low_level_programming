@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	unsigned char *opcodes;
 	int n, i;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -23,8 +24,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
+
 	opcodes = (unsigned char *)main;
-	
+
 	for (i = 0; i < n; i++)
 	{
 		if (i > 0)
@@ -32,5 +34,5 @@ int main(int argc, char *argv[])
 		printf("%02x", opcodes[i]);
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
