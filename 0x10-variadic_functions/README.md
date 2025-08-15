@@ -1,2 +1,2 @@
 #Variadic function
-##Practise example on varaici function using betty coding style
+##Practise example on varaidic function using betty coding style
